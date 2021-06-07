@@ -3,12 +3,14 @@ import { CardBody, CardImg, CardImgOverlay } from "reactstrap";
 import Card from "reactstrap/lib/Card";
 import CardTitle from "reactstrap/lib/CardTitle";
 
+
 const MenuItem = (props) => {
   
   return (
     <div>
+
       <Card className="m-3 p-3">
-        <CardBody>
+        <CardBody onClick={props.DishSelect}>
           <CardImg
             style={{ opacity: "0.5" }}
             src={props.dish.image}
